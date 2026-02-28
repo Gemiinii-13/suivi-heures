@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Suivi Heures</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Suivi Heures Supplémentaires & Astreintes</h1>
+
+<div class="tabs">
+  <button onclick="changeMonth('Janvier')">Janvier</button>
+  <button onclick="changeMonth('Février')">Février</button>
+  <button onclick="changeMonth('Mars')">Mars</button>
+  <!-- Ajouter les autres mois -->
+</div>
+
+<div class="form">
+  <input type="text" id="client" placeholder="Nom du client">
+  <input type="text" id="intervention" placeholder="Numéro intervention">
+
+  <label>Début :</label>
+  <input type="time" id="start">
+
+  <label>Fin :</label>
+  <input type="time" id="end">
+
+  <select id="type">
+    <option value="supp">Heure supplémentaire</option>
+    <option value="astreinte">Astreinte</option>
+  </select>
+
+  <textarea id="description" placeholder="Description (optionnel)"></textarea>
+
+  <button onclick="addEntry()">Ajouter</button>
+</div>
+
+<div class="totals">
+  <p>Total Heures Sup : <span id="totalSupp">0</span> h</p>
+  <p>Total Astreintes : <span id="totalAstreinte">0</span> h</p>
+</div>
+
+<div id="entries"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
