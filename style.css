@@ -1,0 +1,76 @@
+body {
+  background-color: #111;
+  color: white;
+  font-family: Arial;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.tabs button {
+  background: #222;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.form {
+  background: #1e1e1e;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+input, select, textarea {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  background: #444;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.entry {
+  position: relative;
+  background: #f0f0f0;
+  color: black;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 8px;
+}
+
+.supp {
+  border-left: 8px solid #2196f3;
+}
+
+.astreinte {
+  border-left: 8px solid #f44336;
+}
+
+.delete, .edit {
+  position: absolute;
+  top: 8px;
+  cursor: pointer;
+}
+
+.delete {
+  right: 10px;
+  color: red;
+}
+
+.edit {
+  right: 35px;
+  color: black;
+}
